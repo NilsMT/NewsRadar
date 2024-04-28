@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/number_sb"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:max="100"
+        android:min="1"
+        android:progress="10"
+        app:layout_constraintEnd_toStartOf="@+id/number_et"
+        app:layout_constraintStart_toStartOf="@+id/genre_sp"
+        app:layout_constraintTop_toBottomOf="@+id/genre_sp" />
+
+    <TextView
+        android:id="@+id/number_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/nombre"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/number_sb"
+        app:layout_constraintEnd_toStartOf="@+id/number_sb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/number_sb" />
+
+    <TextView
+        android:id="@+id/genre_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/genre"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/genre_sp"
+        app:layout_constraintEnd_toStartOf="@+id/genre_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/genre_sp" />
+
+    <EditText
+        android:id="@+id/number_et"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="@string/description_number_et"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:text="@string/placeholder_number_et"
+        app:layout_constraintBottom_toBottomOf="@+id/number_sb"
+        app:layout_constraintEnd_toEndOf="@+id/genre_sp"
+        app:layout_constraintTop_toTopOf="@+id/number_sb" />
+
+    <Spinner
+        android:id="@+id/genre_sp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/recette_et"
+        app:layout_constraintStart_toStartOf="@+id/recette_et"
+        app:layout_constraintTop_toBottomOf="@+id/recette_et" />
+
+    <EditText
+        android:id="@+id/recette_et"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints="AUTOFILL_TYPE_TEXT"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/placeholder_recette_et"
+        app:layout_constraintEnd_toEndOf="@+id/main_tv"
+        app:layout_constraintStart_toStartOf="@+id/main_tv"
+        app:layout_constraintTop_toBottomOf="@+id/main_tv" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/description_imageButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recette_et"
+        app:layout_constraintStart_toStartOf="@+id/recette_et"
+        app:layout_constraintTop_toBottomOf="@+id/number_sb"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+    <TextView
+        android:id="@+id/main_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/titre_activite_main"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/langueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/btn_radio" />
+
+    <ListView
+        android:id="@+id/langueListView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/langueButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

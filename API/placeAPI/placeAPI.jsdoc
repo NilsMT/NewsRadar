@@ -1,0 +1,30 @@
+/**
+ * @module Types
+ */
+
+/**
+ * @typedef {Object} CountryObject
+ * @property {string} longitude - The longitude of the location in DMS (Degrees, Minutes, Seconds) format.
+ * @property {string} latitude - The latitude of the location in DMS format.
+ * @property {?string} currency - The name of the location's currency, or null if not available.
+ * @property {string} flag - The emoji flag of the country.
+ * @property {string} continent - The continent on which the location is situated.
+ * @property {string} country - The name of the country.
+ * @property {string} country_code - The ISO country code.
+ * @property {?string} city - The city name, or null if not applicable.
+ * @property {?string} postcode - The postal code for the location, or null if not available.
+ * @property {string} adress - The formatted adress easily readable.
+ */
+
+/**
+ * @typedef {Object} CountryArrayObject
+ * @property {number} total_results - The total number of results found.
+ * @property {CountryObject[]} countries - An array of countries or items matching the search criteria.
+ */
+
+ /**
+ * @typedef {Object} ErrorObject
+ * @property {int} error_code - the http response code of the request
+ * @property {string} url - The url of the request that provoked the error.
+ * @property {string} error - The unique error message of the error.
+ */

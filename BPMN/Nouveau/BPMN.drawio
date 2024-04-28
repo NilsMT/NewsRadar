@@ -1,0 +1,314 @@
+<mxfile host="Electron" modified="2024-04-10T08:11:57.728Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Be-eldyfq7siK3ic2ubs" version="24.1.0" type="device">
+  <diagram name="Page-1" id="KtthcLOev4WSxV8cNlgP">
+    <mxGraphModel dx="4097" dy="3543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-133" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;l&#39;utilisateur veut modifier le mot de passe de son compte connecté&lt;/span&gt;" style="swimlane;html=1;startSize=20;fontStyle=0;collapsible=0;horizontal=1;swimlaneLine=1;strokeWidth=2;swimlaneFillColor=#ffffff;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-500" width="650" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-59" value="l&#39;utilisateur arrive sur &lt;br&gt;la page d&#39;information de compte" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-133">
+          <mxGeometry x="100" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-60" value="cliquer sur le bouton se déconnecter" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-133">
+          <mxGeometry x="265" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-61" value="l&#39;utilisateur est déconnecté" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-133">
+          <mxGeometry x="500" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-133" source="ZIAsQ6MfSk-UaTK9Eklu-59" target="ZIAsQ6MfSk-UaTK9Eklu-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-133" source="ZIAsQ6MfSk-UaTK9Eklu-60" target="ZIAsQ6MfSk-UaTK9Eklu-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-115" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;l&#39;utilisateur veut se connecté à un compte existant&lt;/span&gt;" style="swimlane;html=1;startSize=20;fontStyle=0;collapsible=0;horizontal=1;swimlaneLine=1;strokeWidth=2;swimlaneFillColor=#ffffff;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-810" width="1260" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-4" value="l&#39;utilisateur arrive sur &lt;br&gt;la page de connexion" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115">
+          <mxGeometry x="79.5" y="137.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115" source="ZIAsQ6MfSk-UaTK9Eklu-4" target="ZIAsQ6MfSk-UaTK9Eklu-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="219.5" y="162.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-39" value="saisir son mot de passe" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115">
+          <mxGeometry x="529.5" y="122.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115" source="ZIAsQ6MfSk-UaTK9Eklu-52" target="ZIAsQ6MfSk-UaTK9Eklu-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="439.5" y="162.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-41" value="cliquer sur le bouton &quot;se connecter&quot;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115">
+          <mxGeometry x="739.5" y="122.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115" source="ZIAsQ6MfSk-UaTK9Eklu-39" target="ZIAsQ6MfSk-UaTK9Eklu-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115" source="ZIAsQ6MfSk-UaTK9Eklu-41" target="ZIAsQ6MfSk-UaTK9Eklu-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="949.5" y="162.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-45" value="informations valides ?" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115">
+          <mxGeometry x="979.5" y="137.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-48" value="l&#39;utilisateur est connecté" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115">
+          <mxGeometry x="1130.5" y="137.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-52" value="saisir son adresse mail" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115">
+          <mxGeometry x="339.5" y="122.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-53" value="" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115">
+          <mxGeometry x="219.5" y="137.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115" source="ZIAsQ6MfSk-UaTK9Eklu-45" target="ZIAsQ6MfSk-UaTK9Eklu-53">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1004.5" y="67.5" />
+              <mxPoint x="244.5" y="67.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-56" value="non" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZIAsQ6MfSk-UaTK9Eklu-54">
+          <mxGeometry x="-0.92" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115" source="ZIAsQ6MfSk-UaTK9Eklu-45" target="ZIAsQ6MfSk-UaTK9Eklu-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-57" value="oui" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZIAsQ6MfSk-UaTK9Eklu-55">
+          <mxGeometry x="-0.5446" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-115" source="ZIAsQ6MfSk-UaTK9Eklu-53" target="ZIAsQ6MfSk-UaTK9Eklu-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-114" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;l&#39;utilisateur veut s&#39;inscrire&lt;/span&gt;" style="swimlane;html=1;startSize=20;fontStyle=0;collapsible=0;horizontal=1;swimlaneLine=1;strokeWidth=2;swimlaneFillColor=#ffffff;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="1220" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-76" value="l&#39;utilisateur arrive sur &lt;br&gt;la page s&#39;incrire" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114">
+          <mxGeometry x="59.5" y="137.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114" source="ZIAsQ6MfSk-UaTK9Eklu-76" target="ZIAsQ6MfSk-UaTK9Eklu-86">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="199.5" y="162.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-78" value="saisir son mot de passe une première fois" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114">
+          <mxGeometry x="509.5" y="122.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114" source="ZIAsQ6MfSk-UaTK9Eklu-85" target="ZIAsQ6MfSk-UaTK9Eklu-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="419.5" y="162.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114" source="ZIAsQ6MfSk-UaTK9Eklu-78" target="ZIAsQ6MfSk-UaTK9Eklu-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="719.5" y="162.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114" source="ZIAsQ6MfSk-UaTK9Eklu-92" target="ZIAsQ6MfSk-UaTK9Eklu-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="929.5" y="162.5" as="targetPoint" />
+            <mxPoint x="839.5" y="162.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-83" value="1er mot de passe &lt;br&gt;est identique au second ?" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114">
+          <mxGeometry x="959.5" y="137.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-84" value="l&#39;utilisateur est inscrit&lt;br&gt;&amp;nbsp;et connecté" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114">
+          <mxGeometry x="1110.5" y="137.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-85" value="saisir son adresse mail" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114">
+          <mxGeometry x="319.5" y="122.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-86" value="" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114">
+          <mxGeometry x="199.5" y="137.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114" source="ZIAsQ6MfSk-UaTK9Eklu-83" target="ZIAsQ6MfSk-UaTK9Eklu-86">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="984.5" y="67.5" />
+              <mxPoint x="224.5" y="67.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-88" value="non" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZIAsQ6MfSk-UaTK9Eklu-87">
+          <mxGeometry x="-0.92" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114" source="ZIAsQ6MfSk-UaTK9Eklu-83" target="ZIAsQ6MfSk-UaTK9Eklu-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-90" value="oui" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZIAsQ6MfSk-UaTK9Eklu-89">
+          <mxGeometry x="-0.5446" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114" source="ZIAsQ6MfSk-UaTK9Eklu-86" target="ZIAsQ6MfSk-UaTK9Eklu-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-92" value="saisir son mot de passe une deuxième fois" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-114">
+          <mxGeometry x="719.5" y="122.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-113" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;l&#39;utilisateur veut supprimé son compte&lt;/span&gt;" style="swimlane;html=1;startSize=20;fontStyle=0;collapsible=0;horizontal=1;swimlaneLine=1;strokeWidth=2;swimlaneFillColor=#ffffff;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="430" width="950" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-94" value="l&#39;utilisateur arrive sur &lt;br&gt;la page d&#39;information de compte" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113">
+          <mxGeometry x="82.5" y="135" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-95" value="cliquer sur le bouton &quot;supprimer le compte&quot;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113">
+          <mxGeometry x="302.5" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-100" value="confirmer son choix" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113">
+          <mxGeometry x="487.5" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113" source="ZIAsQ6MfSk-UaTK9Eklu-100" target="ZIAsQ6MfSk-UaTK9Eklu-105">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="767.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113" source="ZIAsQ6MfSk-UaTK9Eklu-95" target="ZIAsQ6MfSk-UaTK9Eklu-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-104" value="le compte est supprimé&lt;br&gt;et l&#39;utilisateur est deconnecté" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113">
+          <mxGeometry x="817.5" y="135" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113" source="ZIAsQ6MfSk-UaTK9Eklu-105" target="ZIAsQ6MfSk-UaTK9Eklu-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-112" value="oui" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZIAsQ6MfSk-UaTK9Eklu-111">
+          <mxGeometry x="-0.2545" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-105" value="confirmation" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113">
+          <mxGeometry x="657.5" y="135" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-106" value="" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113">
+          <mxGeometry x="197.5" y="135" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113" source="ZIAsQ6MfSk-UaTK9Eklu-94" target="ZIAsQ6MfSk-UaTK9Eklu-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113" source="ZIAsQ6MfSk-UaTK9Eklu-106" target="ZIAsQ6MfSk-UaTK9Eklu-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-113" source="ZIAsQ6MfSk-UaTK9Eklu-105" target="ZIAsQ6MfSk-UaTK9Eklu-106">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="682.5" y="70" />
+              <mxPoint x="222.5" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-110" value="non" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZIAsQ6MfSk-UaTK9Eklu-109">
+          <mxGeometry x="-0.9322" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-36" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;l&#39;utilisateur veut faire une recherche&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;d&#39;article concernant un lieu avec son compte connecté&lt;/span&gt;" style="swimlane;html=1;startSize=20;fontStyle=0;collapsible=0;horizontal=1;swimlaneLine=1;strokeWidth=2;swimlaneFillColor=#ffffff;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-1120" width="1440" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-1" value="l&#39;utilisateur arrive sur la page d&#39;accueil" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="115" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-13" value="saisir un lieu, une pays, un monument, une adresse" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="255" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-1" target="ZIAsQ6MfSk-UaTK9Eklu-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-16" value="sélectionner un lieu résultant de la saisie" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="745" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-13" target="ZIAsQ6MfSk-UaTK9Eklu-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-20" value="" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="415" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-21" target="ZIAsQ6MfSk-UaTK9Eklu-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-21" value="" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="632" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-22" value="appuyer sur entrée" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="485" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-23" value="cliquer sur le bouton &quot;rechercher&quot;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="485" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-20" target="ZIAsQ6MfSk-UaTK9Eklu-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-23" target="ZIAsQ6MfSk-UaTK9Eklu-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-20" target="ZIAsQ6MfSk-UaTK9Eklu-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-22" target="ZIAsQ6MfSk-UaTK9Eklu-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-30" value="l&#39;utilisateur vois les articles" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="1275" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-31" value="confirmer son choix" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="915" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-16" target="ZIAsQ6MfSk-UaTK9Eklu-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-33" value="afficher les 10 articles les plus récents en rapport avec le lieu" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36">
+          <mxGeometry x="1085" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-31" target="ZIAsQ6MfSk-UaTK9Eklu-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-36" source="ZIAsQ6MfSk-UaTK9Eklu-33" target="ZIAsQ6MfSk-UaTK9Eklu-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-116" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;l&#39;utilisateur veut modifier le mot de passe de son compte connecté&lt;/span&gt;" style="swimlane;html=1;startSize=20;fontStyle=0;collapsible=0;horizontal=1;swimlaneLine=1;strokeWidth=2;swimlaneFillColor=#ffffff;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-190" width="970" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-64" value="l&#39;utilisateur arrive sur la&lt;div&gt;page d&#39;information de compte&lt;/div&gt;" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116">
+          <mxGeometry x="80" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-65" value="saisir son mot de passe" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116">
+          <mxGeometry x="245" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116" source="ZIAsQ6MfSk-UaTK9Eklu-64" target="ZIAsQ6MfSk-UaTK9Eklu-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-69" value="saisir son nouveau mot de passe" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116">
+          <mxGeometry x="445" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-70" value="le mot de passe est modifié" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116">
+          <mxGeometry x="840" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116" source="ZIAsQ6MfSk-UaTK9Eklu-65" target="ZIAsQ6MfSk-UaTK9Eklu-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-72" value="cliquer sur le bouton &quot;changer mon mot de passe&quot;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" vertex="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116">
+          <mxGeometry x="640" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116" source="ZIAsQ6MfSk-UaTK9Eklu-69" target="ZIAsQ6MfSk-UaTK9Eklu-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIAsQ6MfSk-UaTK9Eklu-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZIAsQ6MfSk-UaTK9Eklu-116" source="ZIAsQ6MfSk-UaTK9Eklu-72" target="ZIAsQ6MfSk-UaTK9Eklu-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

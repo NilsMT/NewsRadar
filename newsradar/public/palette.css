@@ -1,0 +1,129 @@
+/* les polices */
+
+/* la classico */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); 
+/* celle qui va vite */
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+
+:root {
+    /*values*/
+    --padding:20px;
+    --gap:20px;
+    --background_blur:10px;
+    --border_radius: 40px;
+
+    /*colors*/
+    --text_white : #FFFFFF;
+    --text_black : #000000;
+    --bg: #141727; /*le background du header par ex*/
+    --bg_trans : #06060640; /*le background des articles par ex*/
+    --text_trans : #FFFFFF80;
+
+    --search_0:#CDCDCD80;
+    --search_1:#FF666680;
+    --search_2:#FF8C6680;
+    --search_3:#FFB36680;
+    --search_4:#FFD96680;
+    --search_5:#FFFF6680;
+    --search_6:#D9FF6680;
+    --search_7:#B3FF6680;
+    --search_8:#8CFF6680;
+    --search_9:#66FF6680;
+    --search_10:#50FF5080;
+}
+
+
+
+body {
+    margin: 0px;
+
+    background-image: url('../src/assets/img/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    overflow: overlay;
+}
+
+*:not(h1,h2,h3,h4,h5) {
+    color: var(--text_white);
+
+    font-size: large;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.flou {
+    backdrop-filter: blur(var(--background_blur));
+    border-radius: var(--border_radius);
+    background-color: var(--bg_trans);
+    padding: var(--padding);
+
+    border: solid 1px var(--text_trans);
+}
+
+
+#app {
+    overflow-y: visible;
+}
+
+.bouton {
+    transition: color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+.bouton>* {
+    transition: color 0.2s ease;
+}
+
+.bouton:hover {
+    background-color: var(--text_trans);
+    color: var(--text_black);
+    transform: scale(1.05);
+
+    cursor: pointer;
+}
+
+.bouton:hover>* {
+    color: var(--text_black);
+}
+
+.msg {
+    border: solid 3px var(--search_1);
+/*ptit flou là*/
+    backdrop-filter: blur(var(--background_blur));
+    border-radius: var(--border_radius);
+    padding: var(--padding);
+
+    display: none;
+}
+
+
+
+.msg[type="error"] {
+    background-color: var(--search_1);
+    border-color: var(--search_1);
+    display: flex;
+}
+.msg[type="ok"] {
+    background-color: var(--search_10);
+    border-color: var(--search_10);
+    display: flex;
+}

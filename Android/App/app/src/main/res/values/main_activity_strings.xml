@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nombre">Nombre</string>
+    <string name="genre">Type de cuisine</string>
+    <string name="description_number_et">nombre de résultats attendu</string>
+    <string name="placeholder_number_et" translatable="false">10</string>
+    <string name="placeholder_recette_et" translatable="false">rice</string>
+    <string name="description_imageButton">lancer la recherche</string>
+    <string name="titre_activite_main">Recettes</string>
+</resources>

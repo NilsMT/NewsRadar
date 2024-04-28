@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="affiches">affichés</string>
+    <string name="placeholder_printed_number" translatable="false">0</string>
+    <string name="titre_activite_result">Résultats</string>
+    <string name="trouves">trouvés</string>
+    <string name="placeholder_found_number" translatable="false">0</string>
+    <string name="bouton_retour_text">Retour</string>
+</resources>

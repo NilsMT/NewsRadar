@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/people_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/placeholder_people_tv"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/people_img"
+        app:layout_constraintStart_toEndOf="@+id/people_img"
+        app:layout_constraintTop_toTopOf="@+id/people_img" />
+
+    <ImageView
+        android:id="@+id/people_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/description_people_img"
+        app:layout_constraintStart_toEndOf="@+id/cook_tv"
+        app:layout_constraintTop_toTopOf="@+id/cook_img"
+        app:srcCompat="@drawable/person" />
+
+    <TextView
+        android:id="@+id/prepa_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/placeholder_prepa_tv"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prepa_img"
+        app:layout_constraintStart_toEndOf="@+id/prepa_img"
+        app:layout_constraintTop_toTopOf="@+id/prepa_img" />
+
+    <ImageView
+        android:id="@+id/prepa_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/description_prepa_img"
+        app:layout_constraintStart_toStartOf="@+id/tags_container"
+        app:layout_constraintTop_toBottomOf="@+id/tags_container"
+        app:srcCompat="@drawable/preparation" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/placeholder_name_tv"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/preparation_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/preparation_tv"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tags_container"
+        app:layout_constraintStart_toStartOf="@+id/recipe_img"
+        app:layout_constraintTop_toBottomOf="@+id/all_ingredients_scroll" />
+
+    <ImageView
+        android:id="@+id/recipe_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/description_recipe_img"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuisines_tv"
+        app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+    <TextView
+        android:id="@+id/time_data"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/placeholder_time_data"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/types_tv"
+        app:layout_constraintEnd_toEndOf="@+id/name_tv"
+        app:layout_constraintTop_toTopOf="@+id/types_tv" />
+
+    <ImageView
+        android:id="@+id/cook_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/description_cook_img"
+        app:layout_constraintStart_toEndOf="@+id/prepa_tv"
+        app:layout_constraintTop_toTopOf="@+id/prepa_img"
+        app:srcCompat="@drawable/cook" />
+
+    <TextView
+        android:id="@+id/cook_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/placeholder_cook_tv"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cook_img"
+        app:layout_constraintStart_toEndOf="@+id/cook_img"
+        app:layout_constraintTop_toTopOf="@+id/cook_img" />
+
+    <ListView
+        android:id="@+id/preparation_lv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/preparation_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/preparation_tv"
+        app:layout_constraintTop_toBottomOf="@+id/preparation_tv"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/tags_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexWrap="wrap"
+        app:layout_constraintEnd_toEndOf="@+id/time_data"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/recipe_img"
+        app:layout_constraintTop_toTopOf="@+id/recipe_img" />
+
+
+    <TextView
+        android:id="@+id/types_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/placeholder_types_tv"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/time_data"
+        app:layout_constraintStart_toStartOf="@+id/name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv" />
+
+    <TextView
+        android:id="@+id/cuisines_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/placeholder_cuisines_tv"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/time_data"
+        app:layout_constraintStart_toStartOf="@+id/types_tv"
+        app:layout_constraintTop_toBottomOf="@+id/types_tv" />
+
+    <TextView
+        android:id="@+id/all_equipments_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_equipments_tv"
+        app:layout_constraintStart_toStartOf="@+id/recipe_img"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_img" />
+
+    <TextView
+        android:id="@+id/all_ingredients_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_ingredients_tv"
+        app:layout_constraintStart_toStartOf="@+id/all_equipments_scroll"
+        app:layout_constraintTop_toBottomOf="@+id/all_equipments_scroll" />
+
+    <HorizontalScrollView
+        android:id="@+id/all_equipments_scroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/all_equipments_tv"
+        app:layout_constraintTop_toBottomOf="@+id/all_equipments_tv">
+
+        <LinearLayout
+            android:id="@+id/all_equipments_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/all_ingredients_scroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/all_ingredients_tv"
+        app:layout_constraintTop_toBottomOf="@+id/all_ingredients_tv">
+
+        <LinearLayout
+            android:id="@+id/all_ingredients_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

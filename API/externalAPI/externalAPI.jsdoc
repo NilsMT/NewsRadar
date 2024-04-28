@@ -1,0 +1,52 @@
+/**
+ * @module Types
+ */
+
+/**
+ * @typedef {Object} CountryObject
+ * @property {string} longitude - The longitude of the location in DMS (Degrees, Minutes, Seconds) format.
+ * @property {string} latitude - The latitude of the location in DMS format.
+ * @property {?string} currency - The name of the location's currency, or null if not available.
+ * @property {string} flag - The emoji flag of the country.
+ * @property {string} continent - The continent on which the location is situated.
+ * @property {string} country - The name of the country.
+ * @property {string} country_code - The ISO country code.
+ * @property {?string} city - The city name, or null if not applicable.
+ * @property {?string} postcode - The postal code for the location, or null if not available.
+ * @property {string} adress - The formatted adress easily readable.
+ */
+
+/**
+ * @typedef {Object} CountryArrayObject
+ * @property {number} total_results - The total number of results found.
+ * @property {CountryObject[]} countries - An array of countries or items matching the search criteria.
+ */
+
+/**
+ * @typedef {Object} NewsObject
+ * @property {string} id_news - The NewsData id of the news item .
+ * @property {string} title - The title of the news item.
+ * @property {string} link - The URL link to the news item.
+ * @property {string} creator - The creator or author of the news item.
+ * @property {string} description - A brief description of the news item.
+ * @property {string} date - The publication date of the news item.
+ * @property {string[]} categories - The category or categories of the news item.
+ * @property {string} language - The language of the news item.
+ * @property {string} image_url - The URL of the image associated with the news item.
+ * @property {string} source_url - The source URL from where the news item was retrieved.
+ * @property {string} source_icon - The URL of the icon representing the source of the news item.
+ */
+
+/**
+ * @typedef {Object} NewsArrayObject
+ * @property {number} total_results - The total number of results available.
+ * @property {?string} next_page - The URL of the next page of results, if any.
+ * @property {NewsObject[]} news - An array of news items.
+ */
+
+/**
+ * @typedef {Object} ErrorObject
+ * @property {int} error_code - the http response code of the request
+ * @property {string} url - The url of the request that provoked the error.
+ * @property {string} error - The unique error message of the error.
+ */

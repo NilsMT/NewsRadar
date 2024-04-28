@@ -1,0 +1,899 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "User API Documentation",
+    "description": "Documentation de l'API User",
+    "version": "1.0.0"
+  },
+  "tags": [],
+  "servers": [
+    {
+      "url": "http://localhost:3003/api/users/v1"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/tryLogin": {
+      "post": {
+        "summary": "Authentification de l'utilisateur",
+        "description": "Authentifie l'utilisateur avec les informations d'identification fournies.",
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Adresse e-mail de l'utilisateur."
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "Mot de passe de l'utilisateur."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Authentification réussie.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Paramètres manquants dans le corps de la requête.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Compte inexistant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Mot de passe incorrect.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/create/user": {
+      "post": {
+        "summary": "Création de compte utilisateur",
+        "description": "Crée un nouveau compte utilisateur avec les informations fournies.",
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Adresse e-mail du nouvel utilisateur."
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "Mot de passe du nouvel utilisateur."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Compte créé avec succès.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Paramètres manquants dans le corps de la requête.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Compte déjà existant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/update/password": {
+      "put": {
+        "summary": "Modification du mot de passe de l'utilisateur",
+        "description": "Modifie le mot de passe de l'utilisateur avec le nouveau mot de passe fourni.",
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Adresse e-mail de l'utilisateur."
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "Mot de passe actuel de l'utilisateur."
+                  },
+                  "new_password": {
+                    "type": "string",
+                    "description": "Nouveau mot de passe de l'utilisateur."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Mot de passe changé avec succès.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Paramètres manquants dans le corps de la requête.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Utilisateur inexistant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Mot de passe incorrect.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/delete/user": {
+      "delete": {
+        "summary": "Suppression de l'utilisateur",
+        "description": "Supprime l'utilisateur avec l'adresse e-mail fournie.",
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Adresse e-mail de l'utilisateur à supprimer."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Utilisateur supprimé avec succès.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Paramètres manquants dans le corps de la requête.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/create/savedArticle": {
+      "post": {
+        "summary": "Ajout d'un article sauvegardé",
+        "description": "Ajoute un nouvel article sauvegardé à la liste des articles sauvegardés de l'utilisateur.",
+        "tags": [
+          "Articles saved"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Adresse e-mail de l'utilisateur."
+                  },
+                  "article": {
+                    "type": "object",
+                    "description": "Article à sauvegarder."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ajout de l'article réussi.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    },
+                    "savedArticles": {
+                      "type": "array",
+                      "description": "Liste mise à jour des articles sauvegardés de l'utilisateur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Paramètres manquants dans le corps de la requête.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Utilisateur inexistant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur avec la route.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/delete/savedArticle": {
+      "delete": {
+        "summary": "Suppression d'un article sauvegardé",
+        "description": "Supprime un article sauvegardé de la liste des articles sauvegardés de l'utilisateur.",
+        "tags": [
+          "Articles saved"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Adresse e-mail de l'utilisateur."
+                  },
+                  "id_article": {
+                    "type": "string",
+                    "description": "Identifiant de l'article à supprimer."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Suppression de l'article réussie.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    },
+                    "savedArticles": {
+                      "type": "array",
+                      "description": "Liste mise à jour des articles sauvegardés de l'utilisateur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Paramètres manquants dans le corps de la requête.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Utilisateur inexistant ou article non trouvé dans les articles sauvegardés de l'utilisateur.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get/savedArticles/{email}": {
+      "get": {
+        "summary": "Récupération des articles sauvegardés",
+        "description": "Récupère la liste des articles sauvegardés de l'utilisateur.",
+        "tags": [
+          "Articles saved"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "email",
+            "required": true,
+            "description": "L'adresse e-mail de l'utilisateur.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Articles sauvegardés envoyés avec succès.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    },
+                    "savedArticles": {
+                      "type": "array",
+                      "description": "Liste des articles sauvegardés de l'utilisateur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Utilisateur inexistant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get/remainingNewsSearch/{email}": {
+      "get": {
+        "summary": "Récupération du nombre de recherches d'articles restantes",
+        "description": "Récupère le nombre de recherches d'articles restantes de l'utilisateur.",
+        "tags": [
+          "Remaining search requests"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "email",
+            "required": true,
+            "description": "L'adresse e-mail de l'utilisateur.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Nombre de recherches d'articles envoyé avec succès.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    },
+                    "limit": {
+                      "type": "integer",
+                      "description": "Nombre de recherches d'articles restantes de l'utilisateur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Utilisateur inexistant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/update/remainingNewsSearch": {
+      "put": {
+        "summary": "Mise à jour du nombre de recherches d'articles restantes",
+        "description": "Met à jour le nombre de recherches d'articles restantes de l'utilisateur avec la valeur fournie.",
+        "tags": [
+          "Remaining search requests"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Adresse e-mail de l'utilisateur."
+                  },
+                  "remainingSearchNews": {
+                    "type": "integer",
+                    "description": "Nouveau nombre de recherches d'articles restantes de l'utilisateur."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Mise à jour du nombre de recherches d'articles restantes de l'utilisateur réussie.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Paramètres manquants dans le corps de la requête.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Utilisateur inexistant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur avec le DAO ou erreur avec la route.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get/remainingPlacesSearch/{email}": {
+      "get": {
+        "summary": "Récupération du nombre de recherches de lieux restantes",
+        "description": "Récupère le nombre de recherches de lieux restantes de l'utilisateur.",
+        "tags": [
+          "Remaining search requests"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "email",
+            "required": true,
+            "description": "L'adresse e-mail de l'utilisateur.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Nombre de recherches de lieux envoyé avec succès.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    },
+                    "limit": {
+                      "type": "integer",
+                      "description": "Nombre de recherches de lieux restantes de l'utilisateur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Utilisateur inexistant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/update/remainingPlacesSearch": {
+      "put": {
+        "summary": "Mise à jour du nombre de recherches de lieux restantes",
+        "description": "Met à jour le nombre de recherches de lieux restantes de l'utilisateur avec la valeur fournie.",
+        "tags": [
+          "Remaining search requests"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Adresse e-mail de l'utilisateur."
+                  },
+                  "remainingSearchPlace": {
+                    "type": "integer",
+                    "description": "Nouveau nombre de recherches de lieux restantes de l'utilisateur."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Mise à jour du nombre de recherches de lieux restantes de l'utilisateur réussie.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message de succès."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Paramètres manquants dans le corps de la requête.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Utilisateur inexistant.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur avec le DAO ou erreur avec la route.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Message d'erreur."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="placeholder_people_tv" translatable="false">6</string>
+    <string name="description_people_img">nombres de portions</string>
+    <string name="placeholder_prepa_tv" translatable="false">45\'</string>
+    <string name="description_prepa_img">temps de préparation</string>
+    <string name="placeholder_name_tv" translatable="false">Curry à la tomate</string>
+    <string name="preparation_tv">Étapes de préparation</string>
+    <string name="description_recipe_img">photo du plat terminé</string>
+    <string name="placeholder_time_data" translatable="false">45\'</string>
+    <string name="description_cook_img">temps de cuisson</string>
+    <string name="placeholder_cook_tv" translatable="false">45\'</string>
+    <string name="placeholder_types_tv" translatable="false">Entrée</string>
+    <string name="placeholder_cuisines_tv" translatable="false">Europeen</string>
+    <string name="all_equipments_tv">Liste de tout les equipements nécessaires</string>
+    <string name="all_ingredients_tv">Liste de tout les ingrédients nécessaires</string>
+</resources>

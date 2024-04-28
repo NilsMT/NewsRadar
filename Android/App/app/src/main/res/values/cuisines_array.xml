@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cuisines_array">
+        <item>Toutes</item>
+        <item>Africaine</item>
+        <item>Asiatique</item>
+        <item>Américaine</item>
+        <item>Britannique</item>
+        <item>Cajun</item>
+        <item>Caribéenne</item>
+        <item>Chinoise</item>
+        <item>Europe de l\'Est</item>
+        <item>Européenne</item>
+        <item>Française</item>
+        <item>Allemande</item>
+        <item>Grecque</item>
+        <item>Indienne</item>
+        <item>Irlandaise</item>
+        <item>Italienne</item>
+        <item>Japonaise</item>
+        <item>Juive</item>
+        <item>Coréenne</item>
+        <item>Amérique latine</item>
+        <item>Méditerranéenne</item>
+        <item>Mexicaine</item>
+        <item>Moyen-Orientale</item>
+        <item>Nordique</item>
+        <item>Du Sud</item>
+        <item>Espagnole</item>
+        <item>Thaïlandaise</item>
+        <item>Vietnamienne</item>
+    </string-array>
+
+</resources>

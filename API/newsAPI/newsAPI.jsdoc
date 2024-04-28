@@ -1,0 +1,32 @@
+/**
+ * @module Types
+ */
+
+ /**
+ * @typedef {Object} NewsObject
+ * @property {string} id_news - The NewsData id of the news item .
+ * @property {string} title - The title of the news item.
+ * @property {string} link - The URL link to the news item.
+ * @property {string} creator - The creator or author of the news item.
+ * @property {string} description - A brief description of the news item.
+ * @property {string} date - The publication date of the news item.
+ * @property {string[]} categories - The category or categories of the news item.
+ * @property {string} language - The language of the news item.
+ * @property {string} image_url - The URL of the image associated with the news item.
+ * @property {string} source_url - The source URL from where the news item was retrieved.
+ * @property {string} source_icon - The URL of the icon representing the source of the news item.
+ */
+
+/**
+ * @typedef {Object} NewsArrayObject
+ * @property {number} total_results - The total number of results available.
+ * @property {?string} next_page - The URL of the next page of results, if any.
+ * @property {NewsObject[]} news - An array of news items.
+ */
+
+/**
+ * @typedef {Object} ErrorObject
+ * @property {int} error_code - the http response code of the request
+ * @property {string} url - The url of the request that provoked the error.
+ * @property {string} error - The unique error message of the error.
+ */

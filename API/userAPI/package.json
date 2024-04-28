@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "moment": "^2.30.1",
+    "mongodb": "^6.5.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "scripts": {
+    "start": "npm install && node server.mjs",
+    "generate-docs": "node swagger-autogen.mjs",
+    "populate": "node data-db.mjs",
+    "clear": "node clear-db.mjs"
+  }
+}

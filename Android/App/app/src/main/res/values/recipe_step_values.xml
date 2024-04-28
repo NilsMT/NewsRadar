@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="etape">Etape</string>
+    <string name="placeholder_step_number" translatable="false">1</string>
+    <string name="equipments_tv">Equipements nécessaires</string>
+    <string name="ingredients_tv">Ingrédients nécessaires</string>
+    <string name="placeholder_step_order" translatable="false">TRUC A FAIRE</string>
+</resources>

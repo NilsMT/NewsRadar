@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tag_cheap">bon marché</string>
+    <string name="tag_dairyFree">sans lactose</string>
+    <string name="tag_glutenFree">sans gluten</string>
+    <string name="tag_ketogenic">cétogène</string>
+    <string name="tag_lowFodmap">faible en FODMAP</string>
+    <string name="tag_sustainable">rassasiant</string>
+    <string name="tag_vegan">vegan</string>
+    <string name="tag_vegetarian">vegetarien</string>
+    <string name="tag_veryHealthy">sain</string>
+    <string name="tag_veryPopular">populaire</string>
+    <string name="tag_whole30" translatable="false">whole30</string>
+</resources>

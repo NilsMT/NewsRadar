@@ -1,0 +1,1 @@
+Pour séparer les fichiers assets et img dans VS Code

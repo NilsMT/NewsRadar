@@ -1,0 +1,44 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "includePattern": ".+\\.(js(doc|x)?|mjs)$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": ["plugins/markdown"],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "includeDate": true,
+        "dateFormat": "Do MMM YYYY",
+        "systemName": "newsAPI",
+        "systemSummary": "An API that provides the micro-services of fetch datas from NewsDataAPI for the NewsRadar web application",
+        "systemLogo": "assets/logo.png",
+        "systemColor": "",
+        "copyright": "NewsRadar Copyright © 2024",
+        "linenums": true,
+        "collapseSymbols": true,
+        "inverseNav": true,
+        "inlineNav": true,
+        "outputSourceFiles": true,
+        "outputSourcePath": false,
+        "disablePackagePath": true,
+        "methodHeadingReturns": true,
+        "showTableOfContents": true,
+        "showAccessFilter": false,
+        "sort": "linenum, longname, version, since",
+        "search": true,
+        "analytics": {"ua": null, "domain": null},
+        "favicon": "assets/logo.png",
+        "stylesheets": [],
+        "scripts": [],
+        "default": {
+            "outputSourceFiles": true
+        }
+    },
+    "markdown": {
+        "parser": "gfm",
+        "hardwrap": true
+    }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nombre">Number</string>
+    <string name="genre">Cuisine type</string>
+    <string name="description_number_et">number of results</string>
+    <string name="description_imageButton">start the search</string>
+    <string name="affiches">printed</string>
+    <string name="trouves">found</string>
+    <string name="bouton_retour_text">Back</string>
+    <string name="titre_activite_main">Recipes</string>
+    <string name="titre_activite_result">Results</string>
+    <string name="description_people_img">number of portions</string>
+    <string name="description_prepa_img">preparation time</string>
+    <string name="preparation_tv">Preparation steps</string>
+    <string name="description_recipe_img">finished dish photo</string>
+    <string name="description_cook_img">cooking time</string>
+    <string name="etape">Step</string>
+    <string name="equipments_tv">required equipments</string>
+    <string name="ingredients_tv">"required ingredients "</string>
+
+    <string name="tag_cheap">cheap</string>
+    <string name="tag_dairyFree">dairyFree</string>
+    <string name="tag_glutenFree">glutenFree</string>
+    <string name="tag_ketogenic">ketogenic</string>
+    <string name="tag_lowFodmap">lowFodmap</string>
+    <string name="tag_sustainable">sustainable</string>
+    <string name="tag_vegan">vegan</string>
+    <string name="tag_vegetarian">vegetarian</string>
+    <string name="tag_veryHealthy">veryHealthy</string>
+    <string name="tag_veryPopular">veryPopular</string>
+
+    <string-array name="cuisines_array">
+        <item>All</item>
+        <item>African</item>
+        <item>Asian</item>
+        <item>American</item>
+        <item>British</item>
+        <item>Cajun</item>
+        <item>Caribbean</item>
+        <item>Chinese</item>
+        <item>Eastern European</item>
+        <item>European</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Indian</item>
+        <item>Irish</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Jewish</item>
+        <item>Korean</item>
+        <item>Latin American</item>
+        <item>Mediterranean</item>
+        <item>Mexican</item>
+        <item>Middle Eastern</item>
+        <item>Nordic</item>
+        <item>Southern</item>
+        <item>Spanish</item>
+        <item>Thai</item>
+        <item>Vietnamese</item>
+    </string-array>
+    <string name="all_equipments_tv">All equipments required</string>
+    <string name="all_ingredients_tv">All ingredients required</string>
+</resources>
