@@ -5,8 +5,8 @@ import { ref } from 'vue'
 import LimitNews from '@/components/LimitSearchNewsComponent.vue'
 import LimitPlaces from '@/components/LimitSearchPlaceComponent.vue'
 
-const a = ref (10)
-const b = ref (125)
+const a = ref(10)
+const b = ref(125)
 
 function dos() {
   a.value--
@@ -29,8 +29,8 @@ function dos() {
       <RouterLink class="flou" to="/">Accueil</RouterLink>
     </div>
     <div>
-      <LimitNews :count="a"/>
-      <LimitPlaces :count="b"/>
+      <LimitNews :count="a" />
+      <LimitPlaces :count="b" />
 
       <button v-on:click="dos">slfjkw</button>
     </div>

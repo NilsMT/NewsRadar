@@ -13,8 +13,8 @@ const router = inject('router')
 
 var map = {}
 
-const limitNews = ref (10)
-const limitPlace = ref (125)
+const limitNews = ref(10)
+const limitPlace = ref(125)
 
 const email = localStorage.getItem('userEmail')
 
@@ -46,11 +46,10 @@ async function updateLimits() {
   limitPlace.value = lmP
   limitNews.value = lmN
 
-  localStorage.setItem('userNewsLimit',lmN)
+  localStorage.setItem('userNewsLimit', lmN)
 
-  console.log("news "+limitNews.value+" place "+limitPlace.value)
+  console.log('news ' + limitNews.value + ' place ' + limitPlace.value)
 }
-
 
 function displayErrorMSG(msg) {
   const resultsList = document.getElementById('searchResult')
@@ -66,7 +65,6 @@ function displayErrorMSG(msg) {
 onMounted(() => {
   localStorage.setItem('isRefreshing', 'false')
 
-  
   // Load script map (créer une balise script)
   const leafletScript = document.createElement('script')
   // leafletScript.src = 'https://unpkg.com/leaflet/dist/leaflet.js'  ancien script qui marche pas
@@ -97,16 +95,15 @@ onMounted(() => {
   })
   //update limits
   updateLimits()
-
 })
 
 //la redirection news
 async function handleNewsRedirection(country) {
   let nlm = limitNews.value - 1
 
-  await expressHandler.setNewsLimit(email,nlm)
-  
-  localStorage.setItem("userNewsLimit",nlm)
+  await expressHandler.setNewsLimit(email, nlm)
+
+  localStorage.setItem('userNewsLimit', nlm)
   updateLimits()
 
   router.push('/ResultatRecherche?country=' + encodeURIComponent(JSON.stringify(country)))
@@ -117,7 +114,6 @@ async function handleSearch() {
   const query = document.getElementById('searchInput').value
 
   if (expressHandler.isLoggedIn() == true) {
-
     const res = await expressHandler.getPlaceLimit(email)
 
     if (res.code == 200) {
@@ -144,7 +140,6 @@ async function handleSearch() {
     }
 
     updateLimits()
-
   } else {
     //display err msg
     router.push('/Connexion')

@@ -3,7 +3,7 @@ import HeaderComp from '@/components/HeaderComponent.vue'
 import FooterComp from '@/components/FooterComponent.vue'
 import ArticleComp from '@/components/ArticleComponent.vue'
 import LimitNews from '@/components/LimitSearchNewsComponent.vue'
-import { onMounted,ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import axios from 'axios'
 import { inject } from 'vue'
@@ -13,10 +13,10 @@ const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
 const country = JSON.parse(urlParams.get('country'))
 
-const arts = ref ([])
-const MSG = ref ('')
+const arts = ref([])
+const MSG = ref('')
 
-const limitNews = ref (0)
+const limitNews = ref(0)
 
 async function fetchData() {
   try {
@@ -24,7 +24,6 @@ async function fetchData() {
       `http://localhost:3000/externalAPI/NewsByCountry/${country.country_code}/${country.city ? country.city : ''}`
     )
     return res.data.news
-
   } catch (error) {
     console.error('Error fetching data:', error)
 
@@ -41,11 +40,9 @@ function displayMSG(msg, error) {
   }
 }
 
-
-
 // prevent refreshing
 
-window.addEventListener('beforeunload', function(event) {
+window.addEventListener('beforeunload', function (event) {
   localStorage.setItem('isRefreshing', 'true')
 })
 
@@ -55,18 +52,15 @@ function handleLeavePage() {
 
 const allLinks = document.querySelectorAll('a')
 
-allLinks.forEach(link => {
-  link.addEventListener('click', function(event) {
+allLinks.forEach((link) => {
+  link.addEventListener('click', function (event) {
     handleLeavePage()
   })
 })
 
 if (localStorage.getItem('isRefreshing') === 'true') {
-  router.push("/")
+  router.push('/')
 }
-
-
-
 
 onMounted(async () => {
   let v = localStorage.getItem('userNewsLimit')
@@ -77,16 +71,15 @@ onMounted(async () => {
   if (limitNews.value > 0) {
     lst = await fetchData()
   } else {
-    displayMSG("Limite de recherche d'article quotidienne atteinte, revenez demain :)",true)
+    displayMSG("Limite de recherche d'article quotidienne atteinte, revenez demain :)", true)
   }
 
-  if (lst==[]) {
-    displayMSG("Aucun article trouvé pour ce lieu",true)
+  if (lst == []) {
+    displayMSG('Aucun article trouvé pour ce lieu', true)
   } else {
     arts.value = lst
   }
 })
-
 </script>
 
 <template>
@@ -119,7 +112,7 @@ onMounted(async () => {
 }
 
 #warn {
-  background-color: var(--search_4)
+  background-color: var(--search_4);
 }
 
 #news_container {
